@@ -1,3 +1,13 @@
+
 .products{
-    background-color: #F3F9FE;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+
+}
+@media screen and (max-width: 550px) {
+    .products{
+       justify-content: space-around;
+    }
 }

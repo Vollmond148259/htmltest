@@ -1,0 +1,12 @@
+.contentContainer{
+    width:1200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom:20px;
+
+}
+.mainContainer{
+    display: flex;
+    background-color: #F3F9FE;
+    justify-content: center;
+}

@@ -1,0 +1,31 @@
+.product{
+    width:250px;
+    height:380px;
+    background-color: white;
+    border:2px solid #bcc2f4;
+    border-radius: 16px;
+    position:relative;
+    margin-top: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.productInfo{
+    padding:10px;
+    height:70px;
+}
+.productInfo h5{
+    margin-top:5px;
+}
+.product h4{
+    text-transform: capitalize;
+}
+.productAction{
+    display: flex;
+    justify-content: flex-end;
+    position:absolute;
+    left:165px;
+    top:330px;
+   
+}
+
+

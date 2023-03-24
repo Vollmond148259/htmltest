@@ -1,5 +1,12 @@
 import styles from "./ProductsSection.module.css";
-export default function ProductsSection() {
+import Product from "./product/product";
+export default function ProductsSection({ productsData }) {
   const { products } = styles;
-  return <div className={products}>hello</div>;
+  return (
+    <div className={products}>
+      {productsData.map((item) => (
+        <Product key={item.id} productItem={item} badgeText="new" />
+      ))}
+    </div>
+  );
 }

@@ -2,11 +2,14 @@
     width:100%;
     display: flex;
     justify-content: center;
+    min-height: 100px;
+    padding-top:20px;
     background-color: #0173e5;
-    height:150px;
+    
 
 }
 .footerContainer{
+    
     width:1200px;
     padding-left:10px;
     padding-right: 10px;
@@ -15,12 +18,16 @@
 .footerNav{
     color:white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.footerNav h4{
+    margin:10px;
 }
 .footerLink{
     color:inherit;
     text-decoration: none;
 }
+
 .footerDivider{
     width:100%;
     height:3px;
@@ -33,4 +40,12 @@
 .footerCopyright{
     color:white;
     font-weight: 300;
+    margin:10px;
+}
+
+@media screen and (max-width:550px){
+    .footerNav{
+flex-direction: column;
+align-items: center;
+    }
 }
