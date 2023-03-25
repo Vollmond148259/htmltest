@@ -1,3 +1,23 @@
 h4,h5{
     margin:0px;
 }
+button{
+    padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+a{
+    text-decoration: none;
+}
+input{
+    border:none;
+}
+ul, li {
+    margin: 0;
+    padding: 0;  
+    }    
+li{
+    list-style-type: none;
+}

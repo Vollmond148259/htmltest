@@ -1,9 +1,20 @@
 import styles from "./Button.module.css";
-export default function Button({ children, status, size }) {
-  const { button, danger, success, small, medium, large } = styles;
+export default function Button({
+  children,
+  status,
+  size,
+  component,
+  full,
+  href,
+  style,
+  onClick,
+  disabled,
+}) {
+  const { button, danger, success, small, medium, large, fullWidth } = styles;
 
   let statusClass;
   let buttonSize;
+
   switch (status) {
     case "default": {
       statusClass = button;
@@ -18,9 +29,10 @@ export default function Button({ children, status, size }) {
       break;
     }
     default: {
-      statusClass = "default";
+      statusClass = button;
     }
   }
+
   switch (size) {
     case "small": {
       buttonSize = small;
@@ -40,8 +52,28 @@ export default function Button({ children, status, size }) {
   }
 
   return (
-    <button className={`${button} ${statusClass} ${buttonSize}`}>
-      {children}
-    </button>
+    <>
+      {component === "a" ? (
+        <form action={href}>
+          <button
+            disabled={disabled}
+            onClick={onClick}
+            style={style}
+            className={`${button} ${statusClass} ${buttonSize} 
+            ${full && fullWidth}`}>
+            {children}
+          </button>
+        </form>
+      ) : (
+        <button
+          disabled={disabled}
+          onClick={onClick}
+          style={style}
+          className={`${button} ${statusClass} ${buttonSize} 
+          ${full && fullWidth}`}>
+          {children}
+        </button>
+      )}
+    </>
   );
 }

@@ -1,0 +1,19 @@
+.pagination{
+    margin-top:20px;
+    display: flex;
+  
+    justify-content: flex-end;
+}
+.paginationInput{
+   width:30px;
+   margin-left: 20px;
+   margin-right: 20px;
+   border-radius: 7px;
+   text-align: center;
+   border:2px solid #0173e4;
+}
+@media screen and (max-width:550px){
+    .pagination{
+justify-content: center;
+    }
+}

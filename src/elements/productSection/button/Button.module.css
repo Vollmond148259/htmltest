@@ -1,13 +1,25 @@
 .button{
-    
     height:30px;
     background-color: #0281FF;
     border:none;
     border-radius: 7px;
     color:white;
     font-weight: 700;
-    cursor:pointer;
+    box-sizing: border-box;
+    cursor: pointer;
 }
+
+.button:disabled{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+.button:disabled:hover{
+    border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
 .button:hover{
     background-color: #0173E4;
 }
@@ -47,6 +59,9 @@
     padding-left:20px;
     padding-right:20px;
     height:40px;
+}
+.fullWidth{
+    width:100%;
 }
 
 

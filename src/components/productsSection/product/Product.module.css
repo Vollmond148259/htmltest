@@ -13,7 +13,12 @@
     padding:10px;
     height:70px;
 }
+.productInfoTitle{
+    max-height:40px;
+    overflow: hidden;
+}
 .productInfo h5{
+    
     margin-top:5px;
 }
 .product h4{

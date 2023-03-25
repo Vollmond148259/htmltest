@@ -3,10 +3,12 @@ import Product from "./product/product";
 export default function ProductsSection({ productsData }) {
   const { products } = styles;
   return (
-    <div className={products}>
-      {productsData.map((item) => (
-        <Product key={item.id} productItem={item} badgeText="new" />
+    <ul className={products}>
+      {productsData.map((item, index) => (
+        <li key={item.id}>
+          <Product productItem={item} num={index} badgeText="new" />
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
