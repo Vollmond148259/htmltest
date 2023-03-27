@@ -4,9 +4,9 @@ export default function ProductsSection({ productsData }) {
   const { products } = styles;
   return (
     <ul className={products}>
-      {productsData.map((item, index) => (
+      {productsData.map((item) => (
         <li key={item.id}>
-          <Product productItem={item} num={index} badgeText="new" />
+          <Product productItem={item} badgeText="new" />
         </li>
       ))}
     </ul>

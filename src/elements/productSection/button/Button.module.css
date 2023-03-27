@@ -8,7 +8,6 @@
     box-sizing: border-box;
     cursor: pointer;
 }
-
 .button:disabled{
   border: 1px solid #999999;
   background-color: #cccccc;
@@ -19,14 +18,12 @@
   background-color: #cccccc;
   color: #666666;
 }
-
 .button:hover{
     background-color: #0173E4;
 }
 .button:active{
     background-color: #316da5;
 }
-
 .success{
     background-color: #00e676;
 }
